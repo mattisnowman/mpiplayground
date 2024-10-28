@@ -27,6 +27,9 @@ else
     fi
 fi
 
+SOURCE_DIR="$(dirname "$(realpath "$0")")"
+SOURCE_FILE="${SOURCE_DIR}/${SOURCE_FILE}"
+
 echo "Running" $SOURCE_FILE 
 
 # Run the MPI program with different numbers of processes

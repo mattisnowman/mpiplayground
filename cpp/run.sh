@@ -27,6 +27,9 @@ else
     fi
 fi
 
+SOURCE_DIR="$(dirname "$(realpath "$0")")"
+SOURCE_FILE="${SOURCE_DIR}/${SOURCE_FILE}"
+
 echo "Running" $SOURCE_FILE 
 
 # Compile the selected source file
