@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#export PATH=/usr/lib64/openmpi/bin:$PATH
-#export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib/:$LD_LIBRARY_PATH
-#export PSM3_DEVICES='self,shm' 
+export PATH=/usr/lib64/openmpi/bin:$PATH
+export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib/:$LD_LIBRARY_PATH
+export PSM3_DEVICES='self,shm'
 
 if [ "$#" -ne 0 ]; then
 	if [ "$1" = "-help" ]; then
