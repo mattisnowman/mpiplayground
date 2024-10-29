@@ -2,16 +2,13 @@
 #include <mpi.h>
 #include <vector>
 
-template < class T >
+template <class T>
 std::ostream& operator << (std::ostream& os, const std::vector<T>& v) 
 {
     os << "(" << v.size() << ")[";
-    for (typename std::vector<T>::const_iterator ii = v.begin(); ii != v.end(); ++ii)
-    {
-        os << " " << *ii;
-    }
-    os << "]";
-    return os;
+    for (auto i : v)
+        os << " " << i;
+    return os << "]";
 }
 
 int main(int argc, char* argv[])
