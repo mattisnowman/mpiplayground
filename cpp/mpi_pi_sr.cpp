@@ -2,6 +2,7 @@
 // If f(x) = 4 * sqrt(1 - x^2), then PI is the intergral of f(x) from 0 to 1
 
 #include <cmath>
+#include <iostream>
 #include <mpi.h>
 
 constexpr double f(double x)

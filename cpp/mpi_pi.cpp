@@ -2,6 +2,7 @@
 // of a quarter circle
 
 #include <cmath>
+#include <iostream>
 #include <mpi.h>
 
 constexpr double f(double x)
